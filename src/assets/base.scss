@@ -1,0 +1,36 @@
+@font-face {
+  font-family: DIN;
+  src: url('@/assets/fonts/DIN.ttf');
+}
+
+.content-box {
+  padding: 15px;
+  padding-right: 0;
+  display: flex;
+  flex-wrap: wrap;
+}
+.el-card {
+  width: 32%;
+  min-width: 280px;
+  margin-right: 15px;
+  margin-bottom: 15px;
+  height: 340px;
+  .el-card__header {
+    padding: 0;
+    height: 40px;
+    line-height: 40px;
+    padding-left: 20px;
+  }
+  .el-card__body {
+    background-color: #242424;
+    width: 100%;
+    height: calc(100% - 40px);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+}
+.el-menu-item.is-active {
+  color: #fff !important;
+  background-color: rgba($color: #2353db, $alpha: 1) !important;
+}

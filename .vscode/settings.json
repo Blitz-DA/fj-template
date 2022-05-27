@@ -1,0 +1,7 @@
+{
+  "editor.formatOnSave": true,
+  "editor.codeActionsOnSave": {
+    "source.fixAll.eslint": true // 开启保存自动修复eslint可以修复的命令
+  },
+  "editor.defaultFormatter": "esbenp.prettier-vscode"
+}
