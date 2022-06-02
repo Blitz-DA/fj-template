@@ -21,7 +21,7 @@ const title = import.meta.env.VITE_APP_TITLE
   width: 100%;
   height: 100%;
   display: grid;
-  grid-template-columns: 180px 1fr;
+  grid-template-columns: 220px 1fr;
   grid-template-rows: 60px 1fr;
   grid-template-areas: 'header header' 'nav main';
   header {
@@ -47,6 +47,7 @@ const title = import.meta.env.VITE_APP_TITLE
     grid-area: main;
     overflow: auto;
     background-color: #f5f5f5;
+    padding: 10px;
   }
 }
 </style>

@@ -19,7 +19,7 @@ const form = reactive({
     <el-form-item label="密码">
       <el-input v-model="form.password" />
     </el-form-item>
-    <el-button @click="userStore.login" type="primary" style="width: 100%"
+    <el-button @click="userStore.login(form)" type="primary" style="width: 100%"
       >登入</el-button
     >
   </el-form>

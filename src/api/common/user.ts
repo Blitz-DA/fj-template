@@ -41,6 +41,6 @@ export function getUserInfo() {
   return axios.post<UserState>('/api/user/info')
 }
 
-export function getMenuList() {
-  return axios.get<[]>('/permissions')
+export function getMenuList(params: { role: string }) {
+  return axios.get<[]>('/permissions', { params })
 }

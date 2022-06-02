@@ -18,6 +18,7 @@ export default defineConfig({
     AutoImport({
       imports: ['vue', 'vue-router'],
       resolvers: [ElementPlusResolver()], // 第三方组件库的解析器
+      dirs: ['src/composables', 'src/store'],
       dts: 'types/auto-imports.d.ts', // tsconfig.json => include: ["types/**/*.ts", "types/**/*.d.ts"]
       eslintrc: {
         enabled: true, // Default `false`

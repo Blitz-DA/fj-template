@@ -31,8 +31,12 @@ const useUserStore = defineStore('user', {
       }
     },
     async getmenuList() {
-      const { data } = await getMenuList()
-      this.menulist = data
+      const { data } = await getMenuList({
+        role: this.uesrInfo?.role || ''
+      })
+      this.$patch((state) => {
+        state.menulist = useTreeList(data)
+      })
     },
     async logout() {
       await userLogout()
@@ -40,13 +44,13 @@ const useUserStore = defineStore('user', {
       this.resetInfo()
       sessionStorage.clear()
     },
+    resetInfo() {
+      this.$reset()
+    }
     // switchRoles() {},
     // setInfo(partial: Partial<UserState>) {
     //   this.$patch(partial)
     // },
-    resetInfo() {
-      this.$reset()
-    }
   },
   persist: {
     enabled: true,

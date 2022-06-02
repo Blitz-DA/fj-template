@@ -1,12 +1,13 @@
 {
   "globals": {
+    "EffectScope": true,
+    "auth": true,
     "computed": true,
     "createApp": true,
     "customRef": true,
     "defineAsyncComponent": true,
     "defineComponent": true,
     "effectScope": true,
-    "EffectScope": true,
     "getCurrentInstance": true,
     "getCurrentScope": true,
     "h": true,
@@ -36,6 +37,7 @@
     "shallowReactive": true,
     "shallowReadonly": true,
     "shallowRef": true,
+    "store": true,
     "toRaw": true,
     "toRef": true,
     "toRefs": true,
@@ -47,6 +49,8 @@
     "useRoute": true,
     "useRouter": true,
     "useSlots": true,
+    "useTreeList": true,
+    "useUserStore": true,
     "watch": true,
     "watchEffect": true
   }
